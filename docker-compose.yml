@@ -37,6 +37,8 @@ services:
       SERVICE_NAME: mysql
     networks:
       - laravel
+    volumes:
+      - ./init:/docker-entrypoint-initdb.d
 
   php:
     build:
@@ -96,7 +98,7 @@ services:
     entrypoint: ['php', '/var/www/html/artisan']
     networks:
       - laravel
-
+      
   mailhog:
     image: mailhog/mailhog:latest
     container_name: mailhog
