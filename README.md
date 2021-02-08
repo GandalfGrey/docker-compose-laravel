@@ -3,7 +3,7 @@ A pretty simplified Docker Compose workflow that sets up a LEMP network of conta
 
 ## Extra
 
-Don't forget to add DB_TEST_DATABASE=test to your .env file
+Don't forget to add `DB_TEST_DATABASE=test` to your .env file
 
 
 ## Usage
